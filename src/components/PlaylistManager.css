@@ -1,0 +1,202 @@
+.playlist-manager {
+  padding: 24px;
+  color: white;
+}
+
+.playlist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.playlist-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.create-button {
+  background: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.create-button:hover {
+  background: #45a049;
+}
+
+.create-playlist-form {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.create-playlist-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.create-playlist-form input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.form-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.form-actions button:first-child {
+  background: #4CAF50;
+  color: white;
+}
+
+.form-actions button:last-child {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.playlist-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.playlist-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.playlist-header-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.playlist-header-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.playlist-header-item h3 {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+}
+
+.playlist-header-item p {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.delete-button {
+  background: rgba(244, 67, 54, 0.2);
+  border: 1px solid rgba(244, 67, 54, 0.5);
+  color: #f44336;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.delete-button:hover {
+  background: rgba(244, 67, 54, 0.3);
+}
+
+.playlist-tracks {
+  padding: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.playlist-track-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.playlist-track-item button {
+  background: rgba(244, 67, 54, 0.2);
+  border: 1px solid rgba(244, 67, 54, 0.5);
+  color: #f44336;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.empty-state,
+.empty-tracks {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 40px;
+}
+
+.add-to-playlist {
+  position: relative;
+}
+
+.add-button {
+  background: rgba(76, 175, 80, 0.2);
+  border: 1px solid rgba(76, 175, 80, 0.5);
+  color: #4CAF50;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.playlist-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 4px;
+  background: rgba(0, 0, 0, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 8px;
+  z-index: 100;
+  min-width: 200px;
+}
+
+.playlist-menu button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 8px 12px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.playlist-menu button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+

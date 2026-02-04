@@ -1,0 +1,91 @@
+.track-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.track-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.track-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.track-item.active {
+  background: rgba(76, 175, 80, 0.2);
+  border-color: rgba(76, 175, 80, 0.5);
+}
+
+.track-number {
+  width: 32px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+.track-item.active .track-number {
+  color: #4CAF50;
+  font-weight: 600;
+}
+
+.track-info {
+  flex: 1;
+  margin-left: 12px;
+}
+
+.track-title {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.track-meta {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+}
+
+.track-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.like-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px;
+  transition: transform 0.2s ease;
+}
+
+.like-button:hover {
+  transform: scale(1.2);
+}
+
+.like-button.liked {
+  animation: heartBeat 0.3s ease;
+}
+
+@keyframes heartBeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+}
+
+.track-duration {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  min-width: 40px;
+  text-align: right;
+}
+
